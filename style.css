@@ -54,6 +54,9 @@
     margin-top: 8px;
     display: block;
   }
+  .button:hover {
+    background-color: rgb(73, 71, 71);
+  }
   .line {
     display: flex;
     height: 4px;
@@ -85,6 +88,10 @@
   .sec {
     padding: 10px;
     border-bottom: 3px solid black;
+  }
+
+  .sec:hover {
+    background-color: rgb(117, 100, 36);
   }
 
   a {

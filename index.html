@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Assignment 1</title>
+  </head>
+  <body>
+    <!-- Header section-->
+    <header class="header">
+      <div class="header-div">
+        <div class="header-name">
+          <p>Food, LLC</p>
+
+          <!-- Button with 3 lines-->
+          <button id="button1" onclick="showButton2()" class="button">
+            <div class="line-1 line"></div>
+            <div class="line-2 line"></div>
+            <div class="line-3 line"></div>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- hidden button with tittles-->
+    <button id="button2" class="t-box">
+      <a href="#section-1"
+        ><div class="sec sec-1"><p>Chicken</p></div></a
+      >
+      <a href="#section-2"
+        ><div class="sec sec-2"><p>Beef</p></div></a
+      >
+      <a href="#section-3"
+        ><div class="sec sec-3"><p>Sushi</p></div></a
+      >
+    </button>
+
+    <section class="top">
+      <h1>Our Menu</h1>
+      <!-- section-1-->
+      <section id="section-1" class="section-1">
+        <div class="container container1">
+          <div id="box1" class="box">
+            <div id="chicken" class="title">
+              <p>chicken</p>
+            </div>
+            <p class="para">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laboriosam, dolorem! Molestiae animi esse aliquam dolorem, commodi
+              libero, provident rerum excepturi veniam voluptas vel eligendi
+              aspernatur corrupti eos maiores nostrum vitae perferendis
+              distinctio magnam a accusamus labore. Neque eius eligendi
+              perspiciatis expedita fuga ducimus magni in minima cum animi.
+              Cumque, temporibus dicta? Dolorem molestias deserunt perspiciatis
+              laboriosam, harum laudantium aut tempora temporibus incidunt
+              necessitatibus, porro, ab vitae! Architecto hic libero molestiae?
+              <br />
+              (End Of Section Chicken)
+              <a href="#top">Back To Top</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- section-2-->
+      <section id="section-2" class="section-2">
+        <div class="container container2">
+          <div id="box2" class="box">
+            <div id="beef" class="title">
+              <p>Beef</p>
+            </div>
+            <p class="para">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laboriosam, dolorem! Molestiae animi esse aliquam dolorem, commodi
+              libero, provident rerum excepturi veniam voluptas vel eligendi
+              aspernatur corrupti eos maiores nostrum vitae perferendis
+              distinctio magnam a accusamus labore. Neque eius eligendi
+              perspiciatis expedita fuga ducimus magni in minima cum animi.
+              Cumque, temporibus dicta? Dolorem molestias deserunt perspiciatis
+              laboriosam, harum laudantium aut tempora temporibus incidunt
+              necessitatibus, porro, ab vitae! Architecto hic libero molestiae?
+              <br />
+              (End Of Section Beef)
+              <a href="#top">Back To Top</a>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- section-3-->
+      <section id="section-3" class="section-3">
+        <div class="container container3">
+          <div id="box3" class="box">
+            <div id="sushi" class="title">
+              <p>Sushi</p>
+            </div>
+            <p class="para">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Laboriosam, dolorem! Molestiae animi esse aliquam dolorem, commodi
+              libero, provident rerum excepturi veniam voluptas vel eligendi
+              aspernatur corrupti eos maiores nostrum vitae perferendis
+              distinctio magnam a accusamus labore. Neque eius eligendi
+              perspiciatis expedita fuga ducimus magni in minima cum animi.
+              Cumque, temporibus dicta? Dolorem molestias deserunt perspiciatis
+              laboriosam, harum laudantium aut tempora temporibus incidunt
+              necessitatibus, porro, ab vitae! Architecto hic libero molestiae?
+              <br />
+              (End Of Section Sushi)
+              <a href="#top">Back To Top</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- script to open hidden button-->
+    <script>
+      function showButton2() {
+        // Get a reference to the second button
+        var button2 = document.getElementById("button2");
+
+        // Toggle the display property between 'none' and 'block'
+        if (button2.style.display === "none") {
+          button2.style.display = "block";
+        } else {
+          button2.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
